@@ -1,14 +1,22 @@
 /// <reference types="cypress" />
 
 describe('MyStore', () => {
-    it('Realizar Cadastro', () =>{
 
+    beforeEach(() => {
         // Acessa a URL do MyStore
         cy.visit('http://automationpractice.com')
+      })
+
+    it('Realizar Cadastro', () =>{
+        
+        // Salva o usuario e senha utilizados nas variaveis do Cypress
+        // Gera email com um numero randomico para evitar erro de emai repetido
+        Cypress.env('userEmail', 'medium'+Math.floor(Math.random() * 1000)+'@cypress.com')
+        Cypress.env('userPwd', 'CypressMedium123')
 
         // Direciona para a pagina de cadastro
         cy.get('[class=login]').click()
-        cy.get('[id=email_create]').type('medium20@cypress.com')
+        cy.get('[id=email_create]').type(Cypress.env('userEmail'))
 
         // Cria um route para validar a API chamada
         cy.server()
@@ -27,7 +35,7 @@ describe('MyStore', () => {
         cy.get('[id=id_gender1]').check().should('be.checked')   // Valida se o elemento esta selecionado
         cy.get('[id=customer_firstname]').type('Medium')
         cy.get('[id=customer_lastname]').type('Cypress')
-        cy.get('[id=passwd]').type('CypressMedium123!')
+        cy.get('[id=passwd]').type(Cypress.env('userPwd'))
         cy.get('[id=days]').select('16')
         cy.get('[id=months]').select('August')
         cy.get('[id=years]').select('1994').should('have.value', '1994')
@@ -46,6 +54,21 @@ describe('MyStore', () => {
 
         // Valida apresentacao de Page Heading da conta criada
         cy.get('.page-heading').should('be.visible').should('have.text', 'My account')  // valida se elemento esta visivel e contem o texto 'My account'
+
     });
 
+    it('Logar no sistema', () =>{
+
+        // Direciona para a pagina de cadastro
+        cy.get('[class=login]').click()
+    
+        // Insere as informacoes salvas nas variaveis do Cypress
+        cy.get('[id=email]').type(Cypress.env('userEmail'))
+        cy.get('[id=passwd]').type(Cypress.env('userPwd'))
+        cy.get('#SubmitLogin > span').click()
+
+        // Valida apresentacao do elemento de sucesso
+        cy.get('.page-heading').should('be.visible').should('have.text', 'My account')  // valida se elemento esta visivel e contem o texto 'My account'
+
+    });
 })
