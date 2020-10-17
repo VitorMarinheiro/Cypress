@@ -1,8 +1,10 @@
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 Given(/^the saucedemo website was accessed$/, () => {
 	cy.visit('https://www.saucedemo.com/') 
 	cy.get('[id=user-name]').should('be.visible')
 });
+
 
 When(/^user information is entered$/, () => {
 	cy.get('[id=user-name]').type('standard_user')
@@ -56,4 +58,3 @@ When(/^the information confirmation screen is finished$/, () => {
 Then(/^the thank you message will be displayed$/, () => {
 	cy.get('.complete-header').should('be.visible')
 });
-
