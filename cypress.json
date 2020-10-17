@@ -1,4 +1,5 @@
 { 
     "chromeWebSecurity": false,
-    "experimentalSourceRewriting": true
+    "experimentalSourceRewriting": true,
+    "testFiles": "*(*.spec.js|*.feature)"
 }
