@@ -1,3 +1,4 @@
+@Saucedemo
 Feature: Saucedemo
 
     As a user, I want to access the swaglab demo website
@@ -8,10 +9,12 @@ Background: Log into the system
     When user information is entered
     Then the home page will be displayed
 
+@OpenProduct
 Scenario: Open more expensive product
     Given that the ordering was selected by "Price (high to low)"
     When the index item "0" is selected
 
+@RemoveProduct
 Scenario: Remove first product from shopping cart
     Given that the ordering was selected by "Name (A to Z)"
     When the index item "0" is selected
@@ -19,6 +22,7 @@ Scenario: Remove first product from shopping cart
     When the shopping cart is opened
     Then the item will be removed from the cart
 
+@OpenProduct @BuyProduct
 Scenario: Buy the last product on the list
     Given that the ordering was selected by "Name (A to Z)"
     When the last item is selected
