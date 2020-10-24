@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="18.765" tests="3" failures="0" skipped="2">
-  <testsuite name="Root Suite" timestamp="2020-10-20T13:14:32" tests="0" file="cypress\integration\saucedemo.feature" failures="0" time="0">
-  </testsuite>
-  <testsuite name="Saucedemo" timestamp="2020-10-20T13:14:32" tests="3" failures="0" time="18.765">
-    <testcase name="Saucedemo Remove first product from shopping cart" time="18.765" classname="Remove first product from shopping cart">
-    </testcase>
-  </testsuite>
-</testsuites>

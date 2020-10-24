@@ -1,9 +1,5 @@
 { 
     "chromeWebSecurity": false,
     "experimentalSourceRewriting": true,
-    "testFiles": "*(*.spec.js|*.feature)",
-    "reporter": "junit",
-    "reporterOptions": {
-        "mochaFile": "test-results/test-output-[hash].xml"
-    }
+    "testFiles": "*(*.spec.js|*.feature)"    
 }
