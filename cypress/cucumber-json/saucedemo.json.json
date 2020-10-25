@@ -14,75 +14,6 @@
     "uri": "saucedemo.feature",
     "elements": [
       {
-        "id": "saucedemo;open-more-expensive-product",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Open more expensive product",
-        "tags": [
-          {
-            "name": "@Saucedemo",
-            "line": 1
-          },
-          {
-            "name": "@OpenProduct",
-            "line": 12
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "the saucedemo website was accessed",
-            "result": {
-              "status": "passed",
-              "duration": 12844000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "user information is entered",
-            "result": {
-              "status": "passed",
-              "duration": 28989000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "the home page will be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 50000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "that the ordering was selected by \"Price (high to low)\"",
-            "result": {
-              "status": "passed",
-              "duration": 210000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "the index item \"0\" is selected",
-            "result": {
-              "status": "passed",
-              "duration": 579000000
-            }
-          }
-        ]
-      },
-      {
         "id": "saucedemo;remove-first-product-from-shopping-cart",
         "keyword": "Scenario",
         "line": 18,
@@ -106,7 +37,7 @@
             "name": "the saucedemo website was accessed",
             "result": {
               "status": "passed",
-              "duration": 1023000000
+              "duration": 10623000000
             }
           },
           {
@@ -115,8 +46,9 @@
             "line": 9,
             "name": "user information is entered",
             "result": {
-              "status": "passed",
-              "duration": 1542000000
+              "status": "failed",
+              "duration": 60868000000,
+              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:144463:13)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:144721:14\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5506:41\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8497:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5091:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5084:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5100:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4970:14)\nFrom Your Spec Code:\n    at Context.stepTest (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9794:6)\n    at eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9813:22)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9812:24)"
             }
           },
           {
@@ -125,8 +57,7 @@
             "line": 10,
             "name": "the home page will be displayed",
             "result": {
-              "status": "passed",
-              "duration": 41000000
+              "status": "skipped"
             }
           },
           {
@@ -135,8 +66,7 @@
             "line": 19,
             "name": "that the ordering was selected by \"Name (A to Z)\"",
             "result": {
-              "status": "passed",
-              "duration": 171000000
+              "status": "skipped"
             }
           },
           {
@@ -145,8 +75,7 @@
             "line": 20,
             "name": "the index item \"0\" is selected",
             "result": {
-              "status": "passed",
-              "duration": 524000000
+              "status": "skipped"
             }
           },
           {
@@ -155,8 +84,7 @@
             "line": 21,
             "name": "it will be added to the cart",
             "result": {
-              "status": "passed",
-              "duration": 132000000
+              "status": "skipped"
             }
           },
           {
@@ -165,8 +93,7 @@
             "line": 22,
             "name": "the shopping cart is opened",
             "result": {
-              "status": "passed",
-              "duration": 460000000
+              "status": "skipped"
             }
           },
           {
@@ -175,8 +102,7 @@
             "line": 23,
             "name": "the item will be removed from the cart",
             "result": {
-              "status": "passed",
-              "duration": 125000000
+              "status": "skipped"
             }
           }
         ]
@@ -208,8 +134,8 @@
             "line": 8,
             "name": "the saucedemo website was accessed",
             "result": {
-              "status": "passed",
-              "duration": 1358000000
+              "status": "skipped",
+              "duration": 156480000000
             }
           },
           {
@@ -218,8 +144,7 @@
             "line": 9,
             "name": "user information is entered",
             "result": {
-              "status": "passed",
-              "duration": 1687000000
+              "status": "skipped"
             }
           },
           {
@@ -228,8 +153,7 @@
             "line": 10,
             "name": "the home page will be displayed",
             "result": {
-              "status": "passed",
-              "duration": 88000000
+              "status": "skipped"
             }
           },
           {
@@ -238,8 +162,7 @@
             "line": 27,
             "name": "that the ordering was selected by \"Name (A to Z)\"",
             "result": {
-              "status": "passed",
-              "duration": 270000000
+              "status": "skipped"
             }
           },
           {
@@ -248,8 +171,7 @@
             "line": 28,
             "name": "the last item is selected",
             "result": {
-              "status": "passed",
-              "duration": 741000000
+              "status": "skipped"
             }
           },
           {
@@ -258,8 +180,7 @@
             "line": 29,
             "name": "it will be added to the cart",
             "result": {
-              "status": "passed",
-              "duration": 177000000
+              "status": "skipped"
             }
           },
           {
@@ -268,8 +189,7 @@
             "line": 30,
             "name": "the shopping cart is opened",
             "result": {
-              "status": "passed",
-              "duration": 954000000
+              "status": "skipped"
             }
           },
           {
@@ -278,8 +198,7 @@
             "line": 31,
             "name": "the request will be continued",
             "result": {
-              "status": "passed",
-              "duration": 980000000
+              "status": "skipped"
             }
           },
           {
@@ -288,8 +207,7 @@
             "line": 32,
             "name": "that user data has been entered",
             "result": {
-              "status": "passed",
-              "duration": 2019000000
+              "status": "skipped"
             }
           },
           {
@@ -298,8 +216,7 @@
             "line": 33,
             "name": "the information confirmation screen is finished",
             "result": {
-              "status": "passed",
-              "duration": 3635000000
+              "status": "skipped"
             }
           },
           {
@@ -308,8 +225,7 @@
             "line": 34,
             "name": "the thank you message will be displayed",
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           }
         ]

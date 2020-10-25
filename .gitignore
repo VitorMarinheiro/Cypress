@@ -1,2 +1,11 @@
+# Ignorar os modulos instalados
 node_modules/
+
+# Ignorar os videos gravados
 cypress/videos/
+
+# Ignorar os reports criados
+cypress/reports/
+
+# Ignorar os reports criados via json
+cypress/cucumber-json/

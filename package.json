@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:run": "cypress run ",
-    "postcypress:run": "node ./cypress/support/cucumber-html-reporter.js"
+    "postcypress:run": "node ./cypress/support/multiple-cucumber-html-reporter.js && node ./cypress/support/cucumber-html-reporter.js"
   },
   "keywords": [],
   "author": "",
