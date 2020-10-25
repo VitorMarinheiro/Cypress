@@ -9,3 +9,6 @@ cypress/reports/
 
 # Ignorar os reports criados via json
 cypress/cucumber-json/
+
+# Ignorar os screenshots de erro gravados
+cypress/screenshots/
