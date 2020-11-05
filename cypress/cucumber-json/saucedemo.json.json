@@ -37,7 +37,7 @@
             "name": "the saucedemo website was accessed",
             "result": {
               "status": "passed",
-              "duration": 10623000000
+              "duration": 5458000000
             }
           },
           {
@@ -46,9 +46,8 @@
             "line": 9,
             "name": "user information is entered",
             "result": {
-              "status": "failed",
-              "duration": 60868000000,
-              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:144463:13)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:144721:14\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5506:41\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8497:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5091:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5084:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:5100:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4970:14)\nFrom Your Spec Code:\n    at Context.stepTest (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9794:6)\n    at eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9813:22)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\saucedemo.feature:9812:24)"
+              "status": "passed",
+              "duration": 3861000000
             }
           },
           {
@@ -57,7 +56,8 @@
             "line": 10,
             "name": "the home page will be displayed",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 107000000
             }
           },
           {
@@ -66,7 +66,8 @@
             "line": 19,
             "name": "that the ordering was selected by \"Name (A to Z)\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 490000000
             }
           },
           {
@@ -75,7 +76,8 @@
             "line": 20,
             "name": "the index item \"0\" is selected",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 943000000
             }
           },
           {
@@ -84,7 +86,8 @@
             "line": 21,
             "name": "it will be added to the cart",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 190000000
             }
           },
           {
@@ -93,7 +96,8 @@
             "line": 22,
             "name": "the shopping cart is opened",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 528000000
             }
           },
           {
@@ -102,7 +106,8 @@
             "line": 23,
             "name": "the item will be removed from the cart",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 225000000
             }
           }
         ]
@@ -135,7 +140,7 @@
             "name": "the saucedemo website was accessed",
             "result": {
               "status": "skipped",
-              "duration": 156480000000
+              "duration": 296000000
             }
           },
           {

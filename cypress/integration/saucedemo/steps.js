@@ -1,15 +1,17 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
+import Login from '../pageobjects/login'
+
+const login = new Login()
 
 Given(/^the saucedemo website was accessed$/, () => {
 	cy.visit('https://www.saucedemo.com/') 
-	cy.get('[id=user-name]').should('be.visible')
+	login.username().should('be.visible')
 });
 
-
 When(/^user information is entered$/, () => {
-	cy.get('[id=user-name]').type('standard_user')
-	cy.get('[id=password]').type('secret_sauce')
-	cy.get('[id=login-button]').click()
+	login.username().type('standard_user')
+	login.password().type('secret_sauce')
+	login.loginButton().click()
 });
 
 Then(/^the home page will be displayed$/, () => {

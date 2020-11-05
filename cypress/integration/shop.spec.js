@@ -1,5 +1,9 @@
 /// <reference types="cypress" />
 
+/* 
+ * Fluxo de demonstração básico da ferramenta Cypress.
+ * É desejável que se utilize o cucumber integrado ao Cypress para melhor aproveitamento da ferramenta.
+ */
 describe('MyStore', () => {
 
     beforeEach(() => {
