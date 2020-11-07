@@ -1,62 +1,74 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-import Login from '../pageobjects/login'
 
-const login = new Login()
+// Import das Pages
+import login from '../../support/pages/login'
+import listOfProducts from '../../support/pages/listOfProducts'
+import product from '../../support/pages/product'
+import cart from '../../support/pages/cart'
+import informationsCheckout from '../../support/pages/informationsCheckout'
+import checkoutOverview from '../../support/pages/checkoutOverview'
+import finish from '../../support/pages/finish'
 
 Given(/^the saucedemo website was accessed$/, () => {
-	cy.visit('https://www.saucedemo.com/') 
-	login.username().should('be.visible')
+	login.acessAndValidateLoginPage()
 });
 
 When(/^user information is entered$/, () => {
-	login.username().type('standard_user')
-	login.password().type('secret_sauce')
-	login.loginButton().click()
+	login.logIntoTheSystem()
 });
 
 Then(/^the home page will be displayed$/, () => {
-	cy.get('.product_label').should('be.visible')
+	listOfProducts.validatePage()
 });
 
-Given(/^that the ordering was selected by "([^"]*)"$/, (ordenacao) => {
-	cy.get('.product_sort_container').select(ordenacao)
+Then(/^the application state will be restarted$/, () => {
+	listOfProducts.resetApplicationState()
 });
 
-When(/^the index item "([^"]*)" is selected$/, (posicao) => {
-	cy.get('img[class=inventory_item_img]').eq(posicao).click()
+Given(/^that the ordering was selected by "([^"]*)"$/, (order) => {
+	listOfProducts.sortingProducts(order)
+});
+
+When(/^the index item "([^"]*)" is selected$/, (position) => {
+	listOfProducts.selectItemWithIndex(position)
 });
 
 Then(/^it will be added to the cart$/, () => {
-	cy.get('.btn_primary').click()
+	product.addProductToCart()
 });
 
 When(/^the shopping cart is opened$/, () => {
-	cy.get('path').click()
+	product.openCart()
 });
 
 Then(/^the item will be removed from the cart$/, () => {
-	cy.get('.item_pricebar > .btn_secondary').click().should('not.exist');
+	cart.validateRemovedItem()
 });
 
 When(/^the last item is selected$/, () => {
-	cy.get('img[class=inventory_item_img]').last().click()
+	cart.selectLastItem()
+});
+
+Then(/^the number of items equal to "([^"]*)" will be validated$/, (qt) => {
+	cart.validateNumberOfItems(qt)
+	cart.validatePrice()
 });
 
 Then(/^the request will be continued$/, () => {
-	cy.get('.btn_action').click()
+	cart.continueRequest()
 });
 
 Given(/^that user data has been entered$/, () => {
-	cy.get('[data-test=firstName]').type('Vitor')
-	cy.get('[data-test=lastName]').type('Marinheiro')
-	cy.get('[data-test=postalCode]').type('12345678')
-	cy.get('.btn_primary').click()
+	informationsCheckout.validatePage()
+	informationsCheckout.insertInformations()
 });
 
 When(/^the information confirmation screen is finished$/, () => {
-	cy.get('.btn_action').click()
+	checkoutOverview.validatePage()
+	checkoutOverview.validateInformations()
+	checkoutOverview.finishRequest()
 });
 
 Then(/^the thank you message will be displayed$/, () => {
-	cy.get('.complete-header').should('be.visible')
+	finish.validateSucess()
 });
