@@ -37,7 +37,7 @@
             "name": "the saucedemo website was accessed",
             "result": {
               "status": "passed",
-              "duration": 440000000
+              "duration": 5399000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "user information is entered",
             "result": {
               "status": "passed",
-              "duration": 820000000
+              "duration": 4138000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "the home page will be displayed",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 65000000
             }
           },
           {
@@ -66,8 +66,9 @@
             "line": 11,
             "name": "the application state will be restarted",
             "result": {
-              "status": "passed",
-              "duration": 574000000
+              "status": "failed",
+              "duration": 5112000000,
+              "error_message": "CypressError: Timed out retrying: `cy.click()` failed because this element is not visible:\n\n`<a id=\"reset_sidebar_link\" class=\"bm-item menu-item\" href=\"#\" tabindex=\"0\" style=\"display: block;\">Reset A...</a>`\n\nThis element `<a#reset_sidebar_link.bm-item.menu-item>` is not visible because its parent `<div.bm-menu-wrap>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.ensureVisibility (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:148491:24)\n    at runAllChecks (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:137846:14)\n    at retryActionability (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:137889:16)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at Function.Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7658:29)\n    at tryFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:151731:24)\n    at whenStable (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:151772:12)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:151295:16\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8501:18)\n    at Promise._fulfill (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:8445:18)\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10059:46\nFrom Your Spec Code:\n    at listOfProducts.resetApplicationState (https://www.saucedemo.com/__cypress/tests?p=cypress/integration/saucedemo.feature:414:29)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress/integration/saucedemo.feature:66:30)\n    at Context.resolveAndRunStepDefinition (https://www.saucedemo.com/__cypress/tests?p=cypress/integration/saucedemo.feature:10933:29)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress/integration/saucedemo.feature:10277:35)"
             }
           },
           {
@@ -76,8 +77,7 @@
             "line": 15,
             "name": "that the ordering was selected by \"Price (high to low)\"",
             "result": {
-              "status": "passed",
-              "duration": 171000000
+              "status": "skipped"
             }
           },
           {
@@ -86,8 +86,7 @@
             "line": 16,
             "name": "the index item \"0\" is selected",
             "result": {
-              "status": "passed",
-              "duration": 112000000
+              "status": "skipped"
             }
           }
         ]
@@ -115,8 +114,8 @@
             "line": 8,
             "name": "the saucedemo website was accessed",
             "result": {
-              "status": "passed",
-              "duration": 226000000
+              "status": "skipped",
+              "duration": 751000000
             }
           },
           {
@@ -125,8 +124,7 @@
             "line": 9,
             "name": "user information is entered",
             "result": {
-              "status": "passed",
-              "duration": 818000000
+              "status": "skipped"
             }
           },
           {
@@ -135,8 +133,7 @@
             "line": 10,
             "name": "the home page will be displayed",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -145,8 +142,7 @@
             "line": 11,
             "name": "the application state will be restarted",
             "result": {
-              "status": "passed",
-              "duration": 577000000
+              "status": "skipped"
             }
           },
           {
@@ -155,8 +151,7 @@
             "line": 20,
             "name": "that the ordering was selected by \"Name (A to Z)\"",
             "result": {
-              "status": "passed",
-              "duration": 168000000
+              "status": "skipped"
             }
           },
           {
@@ -165,8 +160,7 @@
             "line": 21,
             "name": "the index item \"0\" is selected",
             "result": {
-              "status": "passed",
-              "duration": 116000000
+              "status": "skipped"
             }
           },
           {
@@ -175,8 +169,7 @@
             "line": 22,
             "name": "it will be added to the cart",
             "result": {
-              "status": "passed",
-              "duration": 106000000
+              "status": "skipped"
             }
           },
           {
@@ -185,8 +178,7 @@
             "line": 23,
             "name": "the shopping cart is opened",
             "result": {
-              "status": "passed",
-              "duration": 92000000
+              "status": "skipped"
             }
           },
           {
@@ -195,8 +187,7 @@
             "line": 24,
             "name": "the number of items equal to \"1\" will be validated",
             "result": {
-              "status": "passed",
-              "duration": 18000000
+              "status": "skipped"
             }
           },
           {
@@ -205,8 +196,7 @@
             "line": 25,
             "name": "the item will be removed from the cart",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           }
         ]
@@ -239,7 +229,7 @@
             "name": "the saucedemo website was accessed",
             "result": {
               "status": "passed",
-              "duration": 263000000
+              "duration": 1007000000
             }
           },
           {
@@ -249,7 +239,7 @@
             "name": "user information is entered",
             "result": {
               "status": "passed",
-              "duration": 967000000
+              "duration": 973000000
             }
           },
           {
@@ -259,7 +249,7 @@
             "name": "the home page will be displayed",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 24000000
             }
           },
           {
@@ -269,7 +259,7 @@
             "name": "the application state will be restarted",
             "result": {
               "status": "passed",
-              "duration": 560000000
+              "duration": 1612000000
             }
           },
           {
@@ -279,7 +269,7 @@
             "name": "that the ordering was selected by \"Name (A to Z)\"",
             "result": {
               "status": "passed",
-              "duration": 157000000
+              "duration": 372000000
             }
           },
           {
@@ -289,7 +279,7 @@
             "name": "the last item is selected",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 286000000
             }
           },
           {
@@ -299,7 +289,7 @@
             "name": "it will be added to the cart",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 139000000
             }
           },
           {
@@ -309,7 +299,7 @@
             "name": "the shopping cart is opened",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 102000000
             }
           },
           {
@@ -319,7 +309,7 @@
             "name": "the number of items equal to \"1\" will be validated",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 28000000
             }
           },
           {
@@ -339,7 +329,7 @@
             "name": "that user data has been entered",
             "result": {
               "status": "passed",
-              "duration": 909000000
+              "duration": 1253000000
             }
           },
           {
@@ -349,7 +339,7 @@
             "name": "the information confirmation screen is finished",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 114000000
             }
           },
           {
@@ -359,7 +349,7 @@
             "name": "the thank you message will be displayed",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 14000000
             }
           }
         ]

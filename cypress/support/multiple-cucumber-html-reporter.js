@@ -15,8 +15,8 @@ report.generate({
         },
         device: 'Local test machine',
         platform: {
-            name: 'Windows',
-            version: '10'
+            name: 'MacOs',
+            version: '11.6'
         }
     },
     customData: {
