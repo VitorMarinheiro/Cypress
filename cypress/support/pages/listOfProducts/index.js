@@ -5,7 +5,7 @@ const elem = require('./elements').ELEMENTS;
 class listOfProducts{
 
     validatePage(){
-        cy.get(elem.pageTitle).should('be.visible')
+        cy.get(elem.pageTitle).should('be.visible').should('have.text', 'Products')
     }
 
     sortingProducts(order){

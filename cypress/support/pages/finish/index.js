@@ -5,7 +5,7 @@ const elem = require('./elements').ELEMENTS;
 class finish{
 
     validateSucess(){
-        cy.get(elem.subheader).should('have.text', 'Finish')
+        cy.get(elem.completeText).should('have.text', 'Your order has been dispatched, and will arrive just as fast as the pony can get there!')
         cy.get(elem.completeHeader).should('have.text', 'THANK YOU FOR YOUR ORDER')
     }
 

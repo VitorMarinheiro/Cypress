@@ -3,5 +3,5 @@ export const ELEMENTS = {
     lastName: '[data-test=lastName]',
     postalCode: '[data-test=postalCode]',
     continue: '.btn_primary',
-    subHeader: '.subheader'
+    title: '.title'
 }

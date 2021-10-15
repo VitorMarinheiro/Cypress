@@ -1,5 +1,5 @@
 export const ELEMENTS = {
-    pageTitle: '.product_label',
+    pageTitle: '.title',
     productSort: '.product_sort_container',
     productItem: 'img[class=inventory_item_img]',
     sideMenu: '.bm-burger-button > button',

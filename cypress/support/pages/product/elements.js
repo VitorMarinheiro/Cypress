@@ -1,5 +1,5 @@
 export const ELEMENTS = {
     addToCart: '.btn_primary',
-    openCart: 'path',
+    openCart: '.shopping_cart_link',
     price: '.inventory_details_price'
 }

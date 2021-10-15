@@ -5,7 +5,7 @@ const elem = require('./elements').ELEMENTS;
 class informationsCheckout{
 
     validatePage(){
-        cy.get(elem.subHeader).should('have.text', 'Checkout: Your Information')
+        cy.get(elem.title).should('have.text', 'Checkout: Your Information')
     }
 
     insertInformations(){

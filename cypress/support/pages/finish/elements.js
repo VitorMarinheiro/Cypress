@@ -1,4 +1,4 @@
 export const ELEMENTS = {
     completeHeader: '.complete-header',
-    subheader: '.subheader'
+    completeText: '.complete-text'
 }
